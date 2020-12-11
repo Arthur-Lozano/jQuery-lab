@@ -13,18 +13,12 @@ let $photoTemplate = $('#photo-template');
 $.ajax('./data/page-1.json')
   .then( data => {
     data.forEach(value => {//value each object from json
-      let $templateDiv = $('<div></div>');
-      let $templateClone = $('#photo-template').html();
-      $templateDiv.html($templateClone);
-      console.log($templateDiv.html());
+      // console.log($templateDiv.html());
       // let $newPhoto = $templateClone.clone();
-      $('main').append($templateDiv);
       // $newPhoto.removeAttr('id');
-      new Picture(value);
+      let newPic = new Picture(value);
       // $newPhoto.attr('src',value.image_url);
-
-      console.log(value);
-
+      newPic.render();
     });
   });
 
@@ -37,13 +31,17 @@ function Picture (pic) {
 }
 
 Picture.prototype.render = function() {
-  let $templateClone = $('#photo-template').clone();
-  $('main').append($templateClone);
-  $templateClone.find('h2').text(this.titlel);
-  $templateClone.find('img').attr('src', this.image_url);
-  $templateClone.find('p').text(this.description);
-  // $templateClone.find('p').text(this.keyword);
-  // $templateClone.find('p').text(this.horns);
-  $templateClone.removeAttr('id');
-  $templateClone.attr('id', this.keyword);
+  let $templateDiv = $('<div></div>');
+  let $templateClone = $('#photo-template').html();
+  $templateDiv.html($templateClone);
+
+  // let $templateClone = $('#photo-template').clone();
+  $('main').append($templateDiv);
+  $templateDiv.find('h2').text(this.title);
+  $templateDiv.find('img').attr('src', this.image_url);
+  $templateDiv.find('p').text(this.description);
+  // $templateDiv.find('p').text(this.keyword);
+  // $templateDiv.find('p').text(this.horns);
+  $templateDiv.removeAttr('id');
+  $templateDiv.attr('id', this.keyword);
 }
