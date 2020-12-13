@@ -59,3 +59,18 @@ $('select').on('change', function () {
   }
 });
 
+
+//Lab03
+// $.ajax('./data/page-2.json')
+//   .then(data => {
+//     data.forEach(value => {//value each object from json
+//       // console.log($templateDiv.html());
+//       // let $newPhoto = $templateClone.clone();
+//       // $newPhoto.removeAttr('id');
+//       let newPic = new Picture(value);
+//       // $newPhoto.attr('src',value.image_url);
+//       newPic.render();
+
+//       newPic.item();
+//     });
+//   });
