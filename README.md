@@ -1,40 +1,91 @@
-# jQuery-lab
+# Gallery Of Horns
 
-## Number and name of feature: ____Feature 1 - Display Images
+## Lab 02
 
-## Estimate of time needed to complete: ____2.5 hours
+### jQuery Selectors and Events
 
-## Start time: __1900  9Dec20
+- Number and name of feature: **Feature 1 - Display Images**
 
-## Finish time: _____
+- Estimate of time needed to complete: 2.5 hours
 
-## Actual time needed to complete: _____
+- Start time: 1900  9 Dec 20
 
+- Finish time: 2100  10 Dec 20
 
+- Actual time needed to complete: 5hrs +
 
+### jQuery Selectors and Events
 
+- Number and name of feature: **Feature 2 - Filter Images**
 
+- Estimate of time needed to complete: 1 hour
 
-# jQuery-lab 2
+- Start time: 1900  10 Dec 20
 
-## Number and name of feature: ____Feature 1 - Display Images
+- Finish time: 1430  12 Dec 20
 
-## Estimate of time needed to complete: ____2.5 hours
+- Actual time needed to complete: 5hrs +
 
-## Start time: __1900  9Dec20
+### jQuery Selectors and Events
 
-## Finish time: _____
+- Number and name of feature: **Feature 3: Style Application**
 
-## Actual time needed to complete: _____
+- Estimate of time needed to complete: 1 hour
 
-# jQuery-lab 3
+- Start time: 1300  12 Dec 20
 
-## Number and name of feature: ____Feature 1 - Display Images
+- Finish time: 1515 12 Dec 20
 
-## Estimate of time needed to complete: ____2.5 hours
+- Actual time needed to complete: 2hrs +
 
-## Start time: __1900  9Dec20
+---
 
-## Finish time: _____
+## Lab 03
 
-## Actual time needed to complete: _____
+### Flexbox and Templating
+
+- Number and name of feature: **Feature 1: Pagination**
+
+- Estimate of time needed to complete: 3hrs +
+
+- Start time: 1300  12 Dec 20
+
+- Finish time: 1515 12 Dec 20
+
+- Actual time needed to complete: 2hrs +
+
+<!-- ### Flexbox and Templating
+
+- Number and name of feature: **Feature 2: Templating**
+
+- Estimate of time needed to complete: 1 hour
+
+- Start time: 1300  12 Dec 20
+
+- Finish time: 1515 12 Dec 20
+
+- Actual time needed to complete: 2hrs + -->
+
+### Flexbox and Templating
+
+- Number and name of feature: **Feature 3: Style with Flexbox**
+
+- Estimate of time needed to complete: 1 hour
+
+- Start time: 1300  12 Dec 20
+
+- Finish time: 1515 12 Dec 20
+
+- Actual time needed to complete: 2hrs +
+
+<!-- ### Flexbox and Templating
+
+- Number and name of feature: **Feature 4: Sort the images**
+
+- Estimate of time needed to complete: () hour
+
+- Start time: 1300  12 Dec 20
+
+- Finish time: 1515 12 Dec 20
+
+- Actual time needed to complete: 2hrs + -->
