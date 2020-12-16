@@ -1,12 +1,16 @@
 'use strict';
 
+let allItems = [];
+let keyWords = [];
+let currentPage = 1;
+
 $.ajax('./data/page-1.json')
   .then(data => {
     data.forEach(value => {
       let newPic = new Picture(value, 'pageOne');
 
       newPic.render();
-      newPic.item();
+
       // $('div').removeClass('pageTwo').addClass('pageOne');
     });
 
@@ -20,17 +24,18 @@ $.ajax('./data/page-2.json')
       let newPic = new Picture(value, 'pageTwo');
 
       newPic.render();
-      newPic.item();
+
       // $('div').removeClass('pageOne').addClass('pageTwo');
       // newPic.hide();
     });
     $('.pageTwo').hide();
+    popList();
   });
 
-$('#pageSwitch').on('click',function () {
+$('#pageSwitch').on('click', function () {
   $('.pageTwo').toggle();
   $('.pageOne').toggle();
-
+  currentPage = currentPage === 1 ? 2 : 1;
 
 });
 
@@ -41,6 +46,8 @@ function Picture(pic, page) {
   this.keyword = pic.keyword;
   this.horns = pic.horns;
   this.page = page;
+  allItems.push(this);
+  if (!keyWords.includes(pic.keyword)) keyWords.push(pic.keyword);
 }
 
 Picture.prototype.render = function () {
@@ -60,15 +67,48 @@ Picture.prototype.render = function () {
 
 };
 
-Picture.prototype.item = function () {
-  let listItem = $(`<option value="${this.keyword}")>
-  ${this.keyword}</option>`);
-  if (listItem !== $('select').text()) {
-    $('select').append(listItem);
-  }
-};
+function popList() {
+  keyWords.forEach(item => {
+    let listItem = $(`<option value="${item}")>${item}</option>`);
+    $('#filter').append(listItem);
+  });
+}
 
 //Lab03
 
 
+$('#sortBy').on('change', function () {
+  if ($(this).val() === 'title') {
+    allItems.sort((a, b) => {
+
+      console.log(a);
+      console.log(b);
+
+      if (a.title > b.title) {
+        return 1;
+      }
+      else if (a.title < b.title) {
+        return -1;
+      }
+      else {
+        return 0;
+      }
+    });
+  }
+
+  // shorthand of if else sort
+  else {
+    allItems.sort((a, b) => a.horns > b.horns ? 1 : -1);
+  }
+  $('main').empty();
+
+  allItems.forEach(item => {
+    item.render();
+  });
+  if (currentPage === 1) {
+    $('.pageTwo').hide();
+  }
+
+  else {$('.pageOne').hide();}
+});
 
