@@ -54,17 +54,17 @@
 
 - Actual time needed to complete: 2hrs +
 
-<!-- ### Flexbox and Templating
+### Flexbox and Templating
 
 - Number and name of feature: **Feature 2: Templating**
 
 - Estimate of time needed to complete: 1 hour
 
-- Start time: 1300  12 Dec 20
+- Start time: 1300  15 Dec 20
 
-- Finish time: 1515 12 Dec 20
+- Finish time: 1430 15 Dec 20
 
-- Actual time needed to complete: 2hrs + -->
+- Actual time needed to complete: 1hrs +
 
 ### Flexbox and Templating
 
@@ -76,16 +76,16 @@
 
 - Finish time: 1515 12 Dec 20
 
-- Actual time needed to complete: 2hrs +
+- Actual time needed to complete: 1hr
 
-<!-- ### Flexbox and Templating
+### Flexbox and Templating
 
 - Number and name of feature: **Feature 4: Sort the images**
 
-- Estimate of time needed to complete: () hour
+- Estimate of time needed to complete: 2 hour
 
-- Start time: 1300  12 Dec 20
+- Start time: 1840  15 Dec 20
 
-- Finish time: 1515 12 Dec 20
+- Finish time: 2145 15 Dec 20
 
-- Actual time needed to complete: 2hrs + -->
+- Actual time needed to complete: 3hrs +

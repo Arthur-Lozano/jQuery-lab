@@ -1,6 +1,6 @@
-html {
+/* html {
   width: 960px;
-}
+} */
 img {
   height: 200px;
   width: 300px;
@@ -8,6 +8,14 @@ img {
 
 div {
   width: 300px;
+  margin: auto;
+  padding: 20px;
+  
+}
+
+img {
+  border: solid white;
+  border-radius: 50px;
 }
 
 .container {

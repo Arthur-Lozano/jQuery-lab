@@ -74,7 +74,12 @@ function popList() {
   });
 }
 
-//Lab03
+$('#filter').on('change', function () {
+  $('div').hide();
+
+  console.log ($(this).val());
+  $(`.${$(this).val()}`).show();
+});
 
 
 $('#sortBy').on('change', function () {
@@ -109,6 +114,6 @@ $('#sortBy').on('change', function () {
     $('.pageTwo').hide();
   }
 
-  else {$('.pageOne').hide();}
+  else { $('.pageOne').hide(); }
 });
 
