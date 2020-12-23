@@ -10,13 +10,9 @@ $.ajax('./data/page-1.json')
       let newPic = new Picture(value, 'pageOne');
 
       newPic.render();
-
-      // $('div').removeClass('pageTwo').addClass('pageOne');
     });
 
   });
-
-// $( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" );
 
 $.ajax('./data/page-2.json')
   .then(data => {
@@ -24,9 +20,6 @@ $.ajax('./data/page-2.json')
       let newPic = new Picture(value, 'pageTwo');
 
       newPic.render();
-
-      // $('div').removeClass('pageOne').addClass('pageTwo');
-      // newPic.hide();
     });
     $('.pageTwo').hide();
     popList();
@@ -54,17 +47,6 @@ Picture.prototype.render = function () {
   var template = document.getElementById('template').innerHTML;
   var rendered = Mustache.render(template, this);
   $('main').append(rendered);
-
-  // let $templateDiv = $('<div></div>');
-  // let $templateClone = $('#photo-template').html();
-  // $templateDiv.html($templateClone);
-
-  // $templateDiv.find('h2').text(this.title);
-  // $templateDiv.find('img').attr('src', this.image_url);
-  // $templateDiv.find('p').text(this.description);
-  // $templateDiv.removeAttr('id');
-  // $templateDiv.attr('id', this.keyword);
-
 };
 
 function popList() {
@@ -81,13 +63,9 @@ $('#filter').on('change', function () {
   $(`.${$(this).val()}`).show();
 });
 
-
 $('#sortBy').on('change', function () {
   if ($(this).val() === 'title') {
     allItems.sort((a, b) => {
-
-      console.log(a);
-      console.log(b);
 
       if (a.title > b.title) {
         return 1;
@@ -101,7 +79,6 @@ $('#sortBy').on('change', function () {
     });
   }
 
-  // shorthand of if else sort
   else {
     allItems.sort((a, b) => a.horns > b.horns ? 1 : -1);
   }
